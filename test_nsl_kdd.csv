@@ -1,0 +1,6 @@
+duration,protocol_type,service,flag,src_bytes,dst_bytes
+0,tcp,http,SF,181,5450
+0,udp,domain_u,SF,239,486
+2,tcp,ftp,S0,0,0
+0,icmp,ecr_i,SF,1032,0
+1,tcp,smtp,REJ,545,0
