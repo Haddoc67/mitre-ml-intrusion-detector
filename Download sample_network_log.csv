@@ -1,0 +1,5 @@
+duration,protocol_type,service,flag,src_bytes,dst_bytes,label
+0,tcp,http,SF,181,5450,normal
+0,tcp,private,SF,239,486,neptune
+0,udp,domain_u,SF,0,0,satan
+0,tcp,ftp_data,SF,235,1337,normal
