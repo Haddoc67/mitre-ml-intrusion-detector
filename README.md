@@ -30,7 +30,19 @@ pip install -r requirements.txt
 streamlit run app/app.py
 ```
 
-4. Upload the provided `test_nsl_kdd.csv` file or your own.
+4. ## 📄 Try It Instantly – Sample Data
+
+You can test the intrusion detection app using one of the sample files below:
+
+- ⚡ **Quick Demo (4 rows)** – lightweight and fast:  
+  [small_sample_network_log.csv](https://raw.githubusercontent.com/Haddoc67/mitre-ml-intrusion-detector/main/sample_data/small_sample_network_log.csv)
+
+- 🧪 **Large Test (approx. 21 MB, 200K rows)** – for performance testing:  
+  [large_sample_network_log.csv](https://raw.githubusercontent.com/Haddoc67/mitre-ml-intrusion-detector/main/large_sample/large_sample_network_log.csv)
+
+---
+
+Just download the file that suits your test needs, then upload it directly to the app to see predictions and MITRE ATT&CK mappings.
 
 ## 🧠 ML Model
 
