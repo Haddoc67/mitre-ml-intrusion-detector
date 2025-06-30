@@ -59,8 +59,11 @@ if uploaded_file is not None:
         original_data["MITRE Technique"] = original_data["Prediction"].apply(map_to_mitre)
 
         st.success("Analyse fuldført.")
-        st.dataframe(original_data)
 
-        # Download knap
+        # Vis første 50 rækker i separat visning
+        st.subheader("🔎 De første 50 analyserede forbindelser")
+        st.dataframe(original_data.head(50))
+
+        # Download-knap
         csv = original_data.to_csv(index=False).encode('utf-8')
-        st.download_button("Download resultater som CSV", data=csv, file_name="mitre_analysis.csv", mime="text/csv")
+        st.download_button("📥 Download resultater som CSV", data=csv, file_name="mitre_analysis.csv", mime="text/csv")
